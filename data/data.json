@@ -1,0 +1,60 @@
+{
+  "tickets": [
+    {
+      "id": "1",
+      "author": "Martina",
+      "title": "HELP PLEASE!",
+      "description": "I need help to get my stupid Vanilla JavaScript edit function working.",
+      "room": "29",
+      "status": "open"
+    },
+    {
+      "id": "2",
+      "author": "Alex",
+      "title": "React Hell",
+      "description": "Room 7 I honestly have no idea what we are doing anymore we have seemed to go backwards and started the day feeling good now have no idea what is going on if someone could come over just even for a minute it would help",
+      "room": "15",
+      "status": "open"
+    },
+    {
+      "id": "3",
+      "author": "Zoe",
+      "title": "Testing Testing Testing",
+      "description": "I have no idea what I am doing and I am just trying to get this to work. The test just will not pass and I am not sure why.",
+      "room": "2",
+      "status": "under review"
+    },
+    {
+      "id": "4",
+      "author": "Taimoor",
+      "title": "Romans",
+      "description": "Having problems with Martina her Roman side is coming out and she wants to take over and enslave the rest of us. I'm sure I saw her with a sword and shield.",
+      "room": "15",
+      "status": "closed"
+    },
+    {
+      "id": "5",
+      "author": "Michel",
+      "title": "React Hell",
+      "description": "Room 7 I honestly have no idea what we are doing anymore we have seemed to go backwards and started the day feeling good now have no idea what is going on if someone could come over just even for a minute it would help",
+      "room": "9",
+      "status": "closed"
+    },
+    {
+      "id": "6",
+      "author": "James",
+      "title": "Github Classroom",
+      "description": "We're trying to figure out sharing of the classroom so we can all use the same one (since we're in different teams). I guess other teams will have the same barrier?",
+      "room": "3",
+      "status": "open"
+    },
+    {
+      "author": "Hello",
+      "title": "dhdhdh",
+      "description": "kdkdk",
+      "room": "11",
+      "status": "open",
+      "id": "byn0rh4"
+    }
+  ]
+}
