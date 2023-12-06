@@ -1,5 +1,7 @@
+const url = "https://help-dev-data.onrender.com/"
+
 async function getTickets(id) {
-  const response = await fetch(`http://localhost:4000/tickets/${id}`, {
+  const response = await fetch(`${url}${id}`, {
     next: {
       revalidate: 0,
     },

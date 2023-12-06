@@ -1,4 +1,5 @@
 "use client";
+const url = "https://help-dev-data.onrender.com/"
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -22,7 +23,7 @@ export default function AddTicketForm() {
       status,
     };
 
-    const response = await fetch("http://localhost:4000/tickets", {
+    const response = await fetch(`${url}tickets`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
