@@ -497,6 +497,9 @@ video {
 .left-0 {
   left: 0px;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .m-4 {
   margin: 1rem;
 }
@@ -507,6 +510,14 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -702,6 +713,9 @@ video {
 .pt-8 {
   padding-top: 2rem;
 }
+.pt-4 {
+  padding-top: 1rem;
+}
 .text-center {
   text-align: center;
 }
@@ -752,6 +766,9 @@ video {
 }
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+.hover\:underline-offset-1:hover {
+  text-underline-offset: 1px;
 }
 @media (min-width: 1024px) {
 
