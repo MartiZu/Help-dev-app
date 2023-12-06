@@ -6,7 +6,6 @@ async function getTickets(id) {
     const response = await fetch(`${url}tickets/${id}`, {
       headers: {
         "Content-Type": "application/json",
-        // Add any other headers as needed
       },
     });
 
@@ -17,7 +16,7 @@ async function getTickets(id) {
       return null;
     } else if (!response.ok) {
       console.error(`HTTP error! Status: ${response.status}`);
-      console.error(await response.text()); // Log the response body for further inspection
+      console.error(await response.text());
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
@@ -38,9 +37,9 @@ export default async function Ticket({ params }) {
   return (
     <main className="h-screen">
       <div className="flex flex-col items-center justify-center">
-      <Link className="my-4 hover:underline" href="/tickets">
-        Back to Tickets
-      </Link>
+        <Link className="my-4 hover:underline" href="/tickets">
+          Back to Tickets
+        </Link>
         <div
           className="mx-32 my-8 p-8 w-full max-w-4xl bg-gray-100 leading-loose rounded-lg"
           key={ticket.id}
