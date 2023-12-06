@@ -1,15 +1,34 @@
-const url = "https://help-dev-data.onrender.com/"
+const url = "https://help-dev-data.onrender.com/";
+import Link from "next/link";
 
 async function getTickets(id) {
-  const response = await fetch(`${url}${id}`, {
-    next: {
-      revalidate: 0,
-    },
-  });
+  try {
+    const response = await fetch(`${url}tickets/${id}`, {
+      headers: {
+        "Content-Type": "application/json",
+        // Add any other headers as needed
+      },
+    });
 
-  const tickets = await response.json();
+    console.log(response);
 
-  return tickets;
+    if (response.status === 404) {
+      console.error("Ticket not found");
+      return null;
+    } else if (!response.ok) {
+      console.error(`HTTP error! Status: ${response.status}`);
+      console.error(await response.text()); // Log the response body for further inspection
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const tickets = await response.json();
+    console.log(tickets);
+
+    return tickets;
+  } catch (error) {
+    console.error("Fetch error:", error);
+    throw error;
+  }
 }
 
 export default async function Ticket({ params }) {
@@ -18,7 +37,10 @@ export default async function Ticket({ params }) {
 
   return (
     <main className="h-screen">
-      <div className="flex justify-center">
+      <div className="flex flex-col items-center justify-center">
+      <Link className="my-4 hover:underline" href="/tickets">
+        Back to Tickets
+      </Link>
         <div
           className="mx-32 my-8 p-8 w-full max-w-4xl bg-gray-100 leading-loose rounded-lg"
           key={ticket.id}
