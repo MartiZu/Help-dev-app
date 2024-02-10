@@ -2,7 +2,7 @@
 
 ## Overview
 
-The School of Code Help-Dev Ticketing System is a collaborative platform designed to facilitate the submission and resolution of "help" tickets within the School of Code community. This project was developed over a 2-day sprint using Next.js, React, and Tailwind CSS.
+The School of Code Help-Dev Ticketing System is a collaborative platform designed to facilitate the submission and resolution of "help" tickets within the School of Code community. This project was developed over a 2-day sprint using Next.js, JSON Server and Tailwind CSS. The first day was used for the whole team to learn and study how to use and implement Next.js and the second day we started building this application. I added some more styling once the project was completed. My personal touc hto this project was adding a bit of "magic" and whimsical style to the wording of the ap,, making what might seem more technical and complicated, easy and fun to read.
 
 ## Getting Started
 
@@ -35,11 +35,12 @@ Generated dynamic pages based on user Id.
   - Next.js is used for server-side rendering, optimizing performance and SEO.
 
 - **Jest Testing:**
-  - Testing was a stretch goal and will be the next thing to be implemented with Jest.
+  - Testing was a stretch goal and will be the next thing to be implemented starting with unit testing - Jest.
 
 - **Tailwind CSS Styling:**
   - Tailwind CSS was adopted for a streamlined and utility-first approach to styling.
   - The use of Tailwind allowed for rapid development without compromising design flexibility.
+  - Web only application during the project, adapted for mobile use after the project ended.
 
 ## Learning Experience
 
