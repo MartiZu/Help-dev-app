@@ -1,5 +1,5 @@
 "use client";
-const url = "https://help-dev-data.onrender.com/"
+const url = "https://help-dev-data.onrender.com/";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -39,18 +39,18 @@ export default function AddTicketForm() {
 
   return (
     <form
-      className="flex flex-row justify-center items-center mb-80"
+      className="flex flex-col justify-center items-center lg:w-1/2"
       onSubmit={submitForm}
     >
-      {/* <div></div> */}
-      <div className="boarder-radius:0.5rem bg-gray-100 w-full max-w-4xl h-full text-2xl">
-        <h1 className="text-center m-4 px-64 text-5xl">New ticket form</h1>
-        <div className="flex flex-row w-full">
-          <div className="left m-4 w-1/2 flex flex-col place-content-between h-56">
-            <label className="flex flex-row items-center gap-3">
-              <p>Author</p>
+      <div className="bg-gray-100 w-full max-w-4xl p-4 text-2xl rounded-md">
+        <h1 className="text-center mb-6 text-5xl">New ticket form</h1>
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-1/2 flex flex-col justify-center lg:pr-4 mb-4 lg:mb-0">
+            <label className="mb-4 flex flex-col lg:flex-row items-center lg:items-start gap-3">
+              Author
+            </label>
               <input
-                className="w-full text-base h-8 px-3"
+                className="text-base h-8 px-3 rounded mb-4 mx-4"
                 type="text"
                 required
                 placeholder="Tell us your name"
@@ -58,11 +58,11 @@ export default function AddTicketForm() {
                 value={author}
                 onChange={(e) => setAuthor(e.target.value)}
               />
+            <label className="mb-4 flex flex-col lg:flex-row items-center lg:items-start gap-3">
+              Title
             </label>
-            <label className="flex flex-row items-center gap-9">
-              <p className="">Title</p>
               <input
-                className="w-full text-base h-8 px-3"
+                className="text-base h-8 px-3 rounded mb-4 mx-4"
                 type="text"
                 required
                 placeholder="Tell us the title of your problem"
@@ -70,11 +70,11 @@ export default function AddTicketForm() {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
+            <label className="mb-4 flex flex-col lg:flex-row items-center lg:items-start gap-3">
+              Room
             </label>
-            <label className="flex flex-row items-center gap-5">
-              <p>Room</p>
               <input
-                className="w-full text-base h-8 px-3"
+                className="text-base h-8 px-3 rounded mb-4 mx-4"
                 type="text"
                 required
                 placeholder="Your room number"
@@ -82,12 +82,10 @@ export default function AddTicketForm() {
                 value={room}
                 onChange={(e) => setRoom(e.target.value)}
               />
-            </label>
           </div>
-          <div className="right w-1/2 m-4">
-            {/* <p>Description</p> */}
+          <div className="lg:w-1/2">
             <textarea
-              className="h-full w-full text-base"
+              className="w-full h-40 lg:h-full text-base rounded p-2"
               required
               placeholder="Tell us about a problem"
               name="description"
@@ -96,7 +94,7 @@ export default function AddTicketForm() {
             />
           </div>
         </div>
-        <div className="flex flex-row justify-center mt-4">
+        <div className="flex justify-center mt-4">
           <button
             type="submit"
             className="bg-green-600 text-white mb-4 py-3 px-9"
