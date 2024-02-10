@@ -1,5 +1,6 @@
 const url = "https://help-dev-data.onrender.com/";
 import Link from "next/link";
+import Image from "next/image";
 
 async function getTickets(id) {
   try {
@@ -37,8 +38,17 @@ export default async function Ticket({ params }) {
   return (
     <main className="h-screen">
       <div className="flex flex-col items-center justify-center">
-        <Link className="my-4 hover:underline" href="/tickets">
-          Back to Tickets
+        <Link className="" href="/tickets">
+          <div className="flex flex-row my-4 hover:underline">
+            <Image
+              src="/arrow_back_ios.svg"
+              width={20}
+              height={20}
+              alt="Back icon"
+              priority={true}
+            />
+            <h1>Back to Tickets</h1>
+          </div>
         </Link>
         <div
           className="mx-32 my-8 p-8 w-full max-w-4xl bg-gray-100 leading-loose rounded-lg"

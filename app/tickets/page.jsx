@@ -1,4 +1,4 @@
-import Loading from "../loading";
+import Loading from "../components/loading";
 import { Suspense } from "react";
 import TicketList from "./TicketList";
 export default function Tickets() {

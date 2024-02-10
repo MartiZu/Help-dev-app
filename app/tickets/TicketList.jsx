@@ -2,7 +2,7 @@ import Link from "next/link";
 const url = "https://help-dev-data.onrender.com/"
 
 async function getTickets() {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  // await new Promise((resolve) => setTimeout(resolve, 2000));
   const response = await fetch(`${url}tickets`, {
     next: {
       revalidate: 0,
