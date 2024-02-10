@@ -5,11 +5,11 @@ import Loz from "./loz.png";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <div className=" relative items-left justify-between p-24 bg-text-primary">
+    <main id="hero-section" className="min-h-screen">
+      <div className=" relative items-left justify-between p-8 bg-text-primary mt-6">
         <h1 className="text-white text-6xl font-bold pb-2">Help Dev</h1>
         <div className="absolute left-0 w-[22rem] h-2 bg-blue-500"></div>
-        <p className="text-white pt-8 text-xl">
+        <p className="text-white pt-8 text-xl text-justify">
           In the whimsical realm of code, where keyboards clatter like enchanted
           typewriters, and bugs scurry away at the sight of a debugger, the wise
           Aladdin of Development once said, Seek ye the lamp of wisdom, but
@@ -26,14 +26,14 @@ export default function Home() {
         </Link>
       </div>
 
-      <div>
-        <div className="py-8 px-24 flex items-center gap-4">
-          <Image src={Loz} alt="Dojo" width={150}></Image>
+      <div id="dashboard">
+        <div id="title" className="py-8 pl-6 flex items-center gap-8">
+          <Image id="pixel-img" src={Loz} alt="Dojo" width={150}></Image>
           <h2 className="text-4xl pb-4">How to ask for help:</h2>
         </div>
       </div>
-      <div className="mb-8">
-        <ul className="flex flex-col px-24 lg:text-xl">
+      <div className="mb-8 text-justify">
+        <ul className="flex flex-col px-8 lg:text-xl">
           <li className="pb-4">
             <span className="font-bold">Clearly state the problem:</span>{" "}
             Behold, O Code Alchemist, the art of unraveling conundrums! Begin

@@ -40,7 +40,7 @@ export default function Navbar() {
   return (
     <nav
       id="nav-bar"
-      className="flex items-center justify-between px-4 py-2 border-b-2 border-b-gray-100 "
+      className="flex items-center justify-between px-8 py-2 border-b-2 border-b-gray-100 "
     >
       <Image src={logo} alt="Dojo" width={100}></Image>
       {isMobile ? (

@@ -3,38 +3,47 @@
 @tailwind utilities;
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  body {
+  #dashboard,
+  #hero-section {
+    margin: auto;
+    max-width: 90%;
+  }
+  #pixel-img {
+    width: 40%;
+  }
+  #title h2{
+    font-size: larger;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #dashboard,
+  #hero-section {
     margin: auto;
     max-width: 90%;
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-    body {
-        margin: auto;
-        max-width: 90%;
-      }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        margin: auto;
-        max-width: 90%;
-      }
+  #dashboard {
+    margin: auto;
+    max-width: 90%;
+  }
 }
 
 /* Tablets in landscape orientation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        margin: auto;
-        max-width: 90%;
-      }
+  #dashboard {
+    margin: auto;
+    max-width: 90%;
+  }
 }
 
 /* Larger tablets and desktops */
 @media only screen and (min-width: 1025px) {
-    body {
-        margin: auto;
-        max-width: 90%;
-      }
+  #dashboard {
+    margin: auto;
+    max-width: 90%;
+  }
 }
