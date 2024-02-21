@@ -49,39 +49,39 @@ export default function AddTicketForm() {
             <label className="mb-4 flex flex-col lg:flex-row items-center lg:items-start gap-3">
               Author
             </label>
-              <input
-                className="text-base h-8 px-3 rounded mb-4 mx-4"
-                type="text"
-                required
-                placeholder="Tell us your name"
-                name="author"
-                value={author}
-                onChange={(e) => setAuthor(e.target.value)}
-              />
+            <input
+              className="text-base h-8 px-3 rounded mb-4 mx-4"
+              type="text"
+              required
+              placeholder="Tell us your name"
+              name="author"
+              value={author}
+              onChange={(e) => setAuthor(e.target.value)}
+            />
             <label className="mb-4 flex flex-col lg:flex-row items-center lg:items-start gap-3">
               Title
             </label>
-              <input
-                className="text-base h-8 px-3 rounded mb-4 mx-4"
-                type="text"
-                required
-                placeholder="Tell us the title of your problem"
-                name="title"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-              />
+            <input
+              className="text-base h-8 px-3 rounded mb-4 mx-4"
+              type="text"
+              required
+              placeholder="Tell us the title of your problem"
+              name="title"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
             <label className="mb-4 flex flex-col lg:flex-row items-center lg:items-start gap-3">
               Room
             </label>
-              <input
-                className="text-base h-8 px-3 rounded mb-4 mx-4"
-                type="text"
-                required
-                placeholder="Your room number"
-                name="room"
-                value={room}
-                onChange={(e) => setRoom(e.target.value)}
-              />
+            <input
+              className="text-base h-8 px-3 rounded mb-4 mx-4"
+              type="text"
+              required
+              placeholder="Your room number"
+              name="room"
+              value={room}
+              onChange={(e) => setRoom(e.target.value)}
+            />
           </div>
           <div className="lg:w-1/2">
             <textarea
@@ -97,7 +97,7 @@ export default function AddTicketForm() {
         <div className="flex justify-center mt-4">
           <button
             type="submit"
-            className="bg-green-600 text-white mb-4 py-3 px-9"
+            className="bg-green-700 text-white mb-4 py-3 px-9"
           >
             Submit!
           </button>

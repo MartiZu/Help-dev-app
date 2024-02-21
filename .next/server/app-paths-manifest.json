@@ -1,5 +1,7 @@
 {
-  "/page": "app/page.js",
+  "/not-found": "app/not-found.js",
   "/tickets/page": "app/tickets/page.js",
-  "/addTicket/page": "app/addTicket/page.js"
+  "/page": "app/page.js",
+  "/addTicket/page": "app/addTicket/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

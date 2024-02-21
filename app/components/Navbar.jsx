@@ -56,7 +56,7 @@ export default function Navbar() {
             Tickets
           </Link>
           <Link className="hover:underline" href="/addTicket">
-            <button className="bg-green-600 py-3 px-8 text-white">
+            <button className="bg-green-700 py-3 px-8 text-white">
               Add Ticket
             </button>
           </Link>

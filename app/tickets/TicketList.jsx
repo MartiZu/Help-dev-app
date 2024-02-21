@@ -1,8 +1,7 @@
 import Link from "next/link";
-const url = "https://help-dev-data.onrender.com/"
+const url = "https://help-dev-data.onrender.com/";
 
 async function getTickets() {
-
   const response = await fetch(`${url}tickets`, {
     next: {
       revalidate: 0,
@@ -34,7 +33,7 @@ export default async function TicketList() {
             <button
               className={`${
                 ticket.status === "open"
-                  ? "bg-green-500"
+                  ? "bg-green-700"
                   : ticket.status === "under review"
                   ? "bg-yellow-600"
                   : "bg-red-500"

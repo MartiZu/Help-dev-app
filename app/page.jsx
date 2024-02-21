@@ -20,7 +20,7 @@ export default function Home() {
           of JavaScript.
         </p>
         <Link className="hover:underline" href="/addTicket">
-          <button className="bg-green-600 mt-4 py-3 px-8 text-white">
+          <button className="bg-green-700 mt-4 py-3 px-8 text-white">
             Add Ticket
           </button>
         </Link>
